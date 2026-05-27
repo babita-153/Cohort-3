@@ -1,0 +1,840 @@
+@font-face {
+    font-family: Rackless;
+    src: url('/fonts/RecklessCondensedS-TRIAL-Book.woff');
+}
+@font-face {
+    font-family: Midnight;
+    src: url('/fonts/midnight-sans-rd-12-medium-trial.otf');
+}
+@font-face {
+    font-family: Roboto;
+    src: url('/fonts/RobotoMono-Regular.ttf');
+}
+@font-face {
+    font-family: Figtree;
+    src: url(/fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+
+main{
+    min-height: 100vh;
+    width:100%;
+    background-color: #FBF9EB;
+    overflow: hidden;
+}
+
+nav{
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: #FFFEFB;
+    border: 1px solid rgb(66, 64, 64);
+}
+nav i{
+    width:30%;
+    font-size: 2rem;
+}
+.nav-part-1{
+    display: flex;
+    gap: 1rem;
+    width:33%;
+    display: none;
+}
+.nav-part-1 h3{
+    font-family: Reckless;
+    font-size:1.5rem;
+    font-weight: 300;
+}
+.nav-part-2{
+    width:20%;
+    height: auto;
+}
+.nav-part-3 img{
+    height: 100%;
+    width: fit-content;
+}
+.nav-part-3{
+    display: flex;
+    gap:1rem;
+     width:33%;
+    align-items: center;
+    justify-content: end;
+}
+.nav-part-3 p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: Roboto;
+    white-space: nowrap;
+    display: none;
+   
+}
+#svg{
+    width:30px;
+    height: 30px;
+}
+
+#section-1{
+    height: 85vh;
+    width:100%;
+    background-image: url('https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=1350.0');
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap:0.7rem;
+    color: white;
+    padding:2rem 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#section-1 h1{
+ font-size: clamp(2.5rem,5vw,5rem);
+font-family: Reckless;
+font-weight: 500;
+}
+#section-1 p{
+    font-size: clamp(0.9rem,1vw,1rem);
+    font-family: Figtree;
+    font-weight: 400;
+}
+#section-1 button{
+    font-size: 1rem;
+    padding:  1rem;
+    border-radius: 1.5rem;
+    border: none;
+    color:white;
+     background-color: #2A2857;
+     font-family: Figtree;
+}
+
+#section-2{
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    padding: 1rem 2.2rem 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.section2-text{
+display: flex;
+align-items: center;
+padding: 3.5rem 1rem;
+justify-content: center;
+}
+.section2-text h1{
+    text-align: center;
+    color: #2E2A27;
+    font-weight: 300;
+    font-family: Reckless;
+    font-size: clamp(1.7rem,5vw,3.7rem);
+}
+#section-2 #top-button{
+    font-size:clamp(2rem,5vw,3rem);
+    text-transform: uppercase;
+    padding: 0.3rem;
+    font-weight: 700;
+    border:none;
+    width:fit-content;
+    border: 1px solid black;
+    background-color: #DAAEEA;
+    border-radius: 0.5rem;
+    font-family: Midnight;
+    rotate: -3deg;
+}
+#section-2 .card-container{
+    width:100%;
+    overflow-x: auto;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    display: flex;
+    gap:0.2rem;
+
+}
+.card-container::-webkit-scrollbar{
+  display: none;
+}
+.card-container .card{
+    display: flex;
+    width:250px;
+    flex-shrink: 0;
+    gap: 0.8rem;
+    flex-direction: column;
+    
+}
+  .card-top{
+    width: 90%;
+    height:60vh;
+    background-color: #C1EE91;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 1px solid #000;
+   
+    
+}
+.card-top-text-up{
+    display: flex;
+    width: 100%;
+    align-items:center;
+    justify-content: space-between;
+   
+}
+.card-top-text-up button{
+      padding: 0.2rem 0.5rem;
+      font-family: Midnight;
+      font-size: 1.2rem;
+      font-weight: 400;
+      border-radius: 0.3rem;
+      display: block;
+      border:1px solid black;
+}
+.card-top-text-btm{
+    display: flex;
+    width: 100%;
+    justify-content:end;
+} 
+ .card-top-text-btm button{
+      padding: 0.2rem 0.5rem;
+      font-family: Reckless;
+      font-size: 1rem;
+      font-weight: 800;
+      border-radius: 0.3rem;
+      display: block;
+      border:1px solid black;
+ }
+.card  .card-top  img{
+    height:90%;
+    position: absolute;
+    width:90%;
+    object-fit: contain;
+    object-position: center;
+} 
+.card-bottom{
+     width: 90%;
+     display: flex;
+     gap:0.6rem;
+     flex-direction: column;
+     align-items: start;
+}
+.card-bottom h1{
+    font-size: 1.3rem;
+    font-family: Reckless;
+    font-weight: 400;
+}
+.card-bottom h6{
+    font-size: 0.9rem;
+    font-family:Figtree;
+    font-weight: 500;
+}
+.card-bottom p{
+    font-size: 0.9rem;
+    opacity: 0.7;
+    font-family:Figtree;
+    font-weight: 300;
+}#section-2 #bottom-button{
+    padding: 0.7rem 3rem;
+    font-size: 0.8rem;
+    border-radius: 1.5rem;
+    border: none;
+    color:white;
+     background-color: #2A2857;
+     font-family: Figtree;
+}
+
+#section-3{
+    min-height: 100vh;
+    width:100%;
+    padding: 3rem 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap:1.3rem;
+}
+#section-3 #dis{
+     font-size:clamp(2rem,5vw,3rem);
+    text-transform: uppercase;
+    padding: 0.3rem;
+    font-weight: 700;
+    border:none;
+    width:fit-content;
+    border: 1px solid black;
+    background-color: #FF7F31;
+    border-radius: 0.5rem;
+    font-family: Midnight;
+    rotate: -3deg;
+}
+#section-3 h1{
+    color: #2E2A27;
+    font-weight: 300;
+    font-family: Reckless;
+    font-size: clamp(1.7rem,5vw,3.8rem);
+}
+#section-3 input{
+    font-size: 3rem;
+    border-radius: 0.6rem;
+    border:0.8px solid grey;
+    background-color: #FBF9EB;
+}
+
+#section-3 p{
+    font-size: 0.7rem;
+    opacity: 0.7;
+    font-family: Figtree;
+}
+#section-3 .option{
+    display: flex;
+    /* flex-direction:column; */
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.option button{
+    background-color: #DAEAFF;
+    padding: 0.4rem 0.8rem;
+    font-size: clamp(1.5rem,5vw,2rem);
+    font-family: Reckless;
+    font-weight: 300;
+    border-radius: 0.6rem;
+    border:1px solid black;
+    width:fit-content;
+}
+#section-4{
+    min-height:200vh;
+    width:100%;
+    background-image: url('https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=900');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 1rem 6rem;
+    align-items: center;
+    gap:7rem;
+}
+#section-4 h1{
+    text-align: center;
+    color: #2E2A27;
+    font-weight: 600;
+    font-family:Midnight;
+    font-size: clamp(4rem,10vw,10rem);
+    line-height:4rem;
+    color: white;
+}
+#section-4 h3{
+    color:white;
+    font-family: Reckless;
+    font-weight: 300;
+    font-size: clamp(1.5rem,5vw,3rem);
+    text-align: center;
+
+
+}
+#section-4 #btn-origin{
+     font-size:clamp(2.1rem,5vw,3rem);
+    text-transform: uppercase;
+    padding: 0.1rem;
+    font-weight: 700;
+    border:none;
+    width:fit-content;
+    border: 1px solid black;
+    background-color: #A2C9FC;
+    border-radius: 0.5rem;
+    font-family: Midnight;
+    rotate: -3deg;
+}
+.svgs{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.svg .svj{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #DAAEEA;
+}
+.svgs .svg{
+    width:20%;
+    display: flex;
+    gap:0.8rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.svg h6{
+    color:white;
+     text-align: center;
+}
+.svg #s-one{
+    background-image: url('https://www.twoleavestea.com/cdn/shop/files/Quality_without_pretense.svg?v=1773116402&width=180.0');
+    background-size: cover;
+    background-position: center;
+}
+.svg #s-two{
+    background-image: url('https://www.twoleavestea.com/cdn/shop/files/care_for_ppl_1.svg?v=1773116330&width=180.0');
+    background-size: cover;
+    background-position: center;
+}
+.svg #s-three{
+    background-image: url('https://www.twoleavestea.com/cdn/shop/files/transparent_sourcing.svg?v=1773116421&width=122');
+    background-size: cover;
+    background-position: center;
+}
+#section-4 button{
+      font-size: 1rem;
+    padding:  0.8rem 3rem;
+    border-radius: 1.5rem;
+    border: none;
+    color:black;
+     background-color:white;
+     font-family: Figtree;
+}
+#section-5{
+    min-height: 90vh;
+    width:100%;
+    display: flex;
+    padding-bottom:4rem;
+    flex-direction: column;
+    background-color: #FBF9EB;
+}
+#section-5 .section5-top{
+    padding: 3rem 1.5rem;
+    display: flex;
+    gap:0.5rem;
+     width:84%;
+    flex-direction: column;
+   justify-content: center;
+
+}
+.section5-top h1{
+    display: none;
+    font-size: 3.2rem;
+    font-family:Reckless;
+    font-weight: 300;
+   
+}
+#section-5 #btn-review{
+  font-size:clamp(2.1rem,5vw,3rem);
+    text-transform: uppercase;
+    padding: 0.1rem;
+    font-weight: 700;
+    border:none;
+    width:fit-content;
+    border: 1px solid black;
+    background-color:#73BC25;
+    border-radius: 0.5rem;
+    font-family: Midnight;
+    rotate: -3deg;
+}
+.box-container{
+    display: flex;
+    width:100%;
+    gap:0.5rem;
+    overflow-x: auto;
+    padding: 0.5rem 0.9rem;
+    
+}
+.box-container::-webkit-scrollbar{
+    display: none;
+}
+.box-container .box{
+    height: 350px;
+    width:290px;
+    flex-shrink: 0;
+    background-color: #F5AF8A;
+    border: 1px solid black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.box .box-text{
+    padding: 2.5rem 0.5rem;
+    text-align: center;
+    width: 95%;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box .box-text h1{
+   font-family: Reckless;
+   font-weight: 200;
+   font-size:clamp(1.6rem,5vw,2rem);
+}
+.box-text p{
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+.inner-box{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    gap: 0;
+    background-color: #EA6D44;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid rgb(83, 81, 81);
+    justify-content: center;
+}
+.inner-box1{
+    height: 100px;
+    width:30%;
+    border-right:1px solid  rgb(83, 81, 81);
+    display: inline-block;
+    object-fit: cover;
+}
+.inner-box1 img{
+    height: 100%;
+    width:100%;
+}
+.inner-box2{
+    height: 100px;
+    object-fit: cover;
+    width:70%;
+
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    gap:0.8rem;
+    justify-content: space-between; 
+}
+.inner-box2 h6{
+    width:50%;
+    color: white;
+    padding: 0.5rem;
+}
+.inner-box2 button{
+    width:30%;
+    padding: 0.3rem 0rem;
+    border-radius: 1rem;
+    border: none;
+}
+#section-6{
+    height: 120vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#section-6 .section6-top{
+    height: 45%;
+    width:100%;
+    background-image: url('https://www.twoleavestea.com/cdn/shop/files/Our_Cafe_Wholesale_Partners.webp?v=1773753185&width=1350.0');
+    background-size:cover;
+    background-position:center;
+}
+
+#section-6 .section6-bottom{
+    height:55%;
+    width:100%;
+    display: flex;
+    padding: 1rem 2rem;
+    gap:1rem; 
+
+    flex-direction: column;
+    background-color: #2A2857;
+}
+
+ .heading h1{
+    text-align: center;
+   font-size: 2.6rem;
+   line-height: 3rem;
+    color:white;
+    font-family: Reckless;
+    font-weight: 300;
+
+}
+
+.para p{
+    text-align: center;
+    font-size: 1.1rem;
+    color:white;
+}
+#section-6 button{
+ font-size: 1rem;
+    padding:  0.8rem 3rem;
+    border-radius: 1.5rem;
+    border: none;
+    color:black;
+     background-color:white;
+     font-family: Figtree;
+}
+#section-7{
+    min-height: 100vh;
+    width:100%;
+    background-color: #9F6429;
+    padding: 2rem 1rem;
+    gap:3rem;
+   
+}
+.section7-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    justify-content: center;
+    gap:2rem;
+    margin-bottom: 1rem;
+}
+.section7-top #lates{
+    font-size:clamp(2.1rem,5vw,3rem);
+    text-transform: uppercase;
+    padding: 0.1rem;
+    font-weight: 700;
+    border:none;
+    width:fit-content;
+    border: 1px solid black;
+    background-color:#D0B396;
+    border-radius: 0.5rem;
+    font-family: Midnight;
+    rotate: -3deg;
+}
+.section7-top h1{
+     text-align: center;
+    color: #2E2A27;
+    font-weight: 500;
+    font-family:Midnight;
+    font-size: clamp(2rem,5vw,4rem);
+    line-height:2rem;
+    color: white;
+}
+#section-7 .section7-bottom{
+    width:100%;
+    display: flex;
+    gap: 0.5rem;
+    overflow-x:auto;
+    
+}
+.section7-bottom::-webkit-scrollbar{
+    display: none;
+}
+.section7-bottom .first-card{
+    height:80%;
+    flex-shrink: 0;
+    padding: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+    width:100%;
+    background-color: #D0B396;
+    border-radius: 1rem;
+    gap:0.5rem;
+    
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-card .two #nice{
+     font-size:clamp(2.1rem,5vw,3rem);
+    text-transform: uppercase;
+    padding: 0.1rem;
+    font-weight: 700;
+    border:none;
+    width:fit-content;
+    border: 1px solid black;
+    background-color:#f3b576;
+    border-radius: 0.5rem;
+    font-family: Midnight;
+    rotate: -3deg;
+}
+.first-card .two h1{
+     text-align: center;
+    color: #2E2A27;
+    font-weight: 300;
+    font-family:Reckless;
+    font-size: clamp(2rem,5vw,3rem);
+    line-height:3rem;
+    color:black;
+}
+.first-card .two p{
+     text-align: center;
+    font-size: 1.1rem;
+    color:black;
+}
+.first-card .one img{
+    height: 20%;
+    width:100%;
+  
+   
+}
+.first-card .two #now{
+     font-size: 1rem;
+    padding:  0.8rem 3rem;
+    border-radius: 1.5rem;
+    border: none;
+    color:black;
+     background-color:white;
+     font-family: Figtree;
+}
+@media (min-width:768px) {
+    
+}
+
+@media(min-width:1024px){
+    .nav-part-1{
+        display: flex;
+        width:33%;
+    }
+    .nav-part-2{
+    width:20%;
+    height: auto;
+}
+    nav i{
+        display: none;
+    }
+    .nav-part-3{
+        width:40%;
+        gap:0.3rem;
+    }
+ 
+    .nav-part-3 p{
+        font-size: 0.8rem;
+        display: flex;
+    }
+    #section-1{
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+        padding: 2rem 2rem;
+        background-image: url('https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=1350.0');
+        background-position:70%;
+        background-size: cover;
+        
+    }
+    #section-1 h1{
+        width:35%;
+    }
+    #section-1 p{
+        width:40%;
+    }
+    #section-1 button{
+        padding: 1rem 3rem;
+        font-size: 1rem;
+    }
+   #section-2 .card-container .card{
+        width:32%;
+    }
+    #section-2 .card-container{
+        padding-top:6rem;
+    }
+ .section2-text{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 6rem;
+    font-family: Reckless;
+}
+.section2-text h1{
+    text-align: center;
+    color: #2E2A27;
+    font-weight: 300;
+    font-family: Reckless;
+    font-size: clamp(1.7rem,5vw,3.2rem);
+}
+#section-2 #top-button{
+    text-transform: uppercase;
+    font-weight: 700;
+    border:none;
+    width:fit-content;
+    border: 1px solid black;
+    background-color: #DAAEEA;
+    letter-spacing: -2px;
+    border-radius: 0.5rem;
+    rotate: -3deg;
+}
+#section-2 #bottom-button{
+    font-size: 1.5rem;
+}
+#section-3{
+    padding: 7rem 8rem 5rem;
+    display: flex;
+}
+#section-3 input{
+    font-size: 4rem;
+    width:50%;
+}
+#section-4 h1{
+   width:30%;
+   line-height: 7rem;
+   text-align: center;
+}
+#section-4 h3{
+    width:90%;
+}
+#section-5  .section5-top  h1{
+    display:flex;
+    
+}
+#section-6{
+    height: 80vh;
+    flex-direction: row;
+}
+#section-6 .section6-top{
+    width:50%;
+    height: 100%;
+
+}
+#section-6 .section6-bottom{
+    width:50%;
+    height: 100%;
+    padding: 4rem;
+    gap:2rem;
+}
+.section6-bottom .heading h1{
+    font-size: 5rem;
+    text-align: start;
+    line-height: 5rem;
+}
+.para p{
+    font-size: 1.5rem;
+     text-align: start;
+}
+.section7-bottom .first-card{
+    display: flex;
+    flex-direction: row;
+}
+.first-card .one{
+    width:50%;
+}
+.first-card .two{
+    width:50%;
+    gap:1rem;
+    display: flex;
+    padding: 1rem 5rem;
+    align-items: start;
+    flex-direction: column;
+   
+}
+.first-card .two p{
+    text-align: left;
+}
+
+}

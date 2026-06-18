@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskManager Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+      <nav class="navbar">
+            <h1><i class="ri-todo-fill"></i> Task Manager</h1>
+            <button class="theme">Dark Theme</button>
+        </nav>
+    <main>
+      
+        <form action="">
+            <h1>Create Task</h1>
+            <div class="title">
+                 <label for="title">Enter Task Title:</label>
+                 <input type="text" id="title" placeholder="Enter Task title...">
+            </div>
+           <div class="work">
+                <label for="task">Choose The type of task:</label>
+                <select id="task">
+                   <option value="study">Study</option>
+                   <option value="work">Work</option>
+                   <option value="other">Other</option>
+                </select>
+           </div>
+           <button type="submit">Add</button>
+        </form>
+
+        <section id="alltasks">
+         
+        </section>
+        <section id="Rendring-pipeline">
+            <h1>Browser Rendring Pipeline</h1>
+            <div class="boxes">
+                <div class="box">Html</div>
+                <i class="ri-arrow-down-line"></i>
+                <div class="box">Parsing</div>
+                <i class="ri-arrow-down-line"></i>
+                <div class="box">Tokenization</div>
+                <i class="ri-arrow-down-line"></i>
+                <div class="box">Dom Tree</div>
+                <i class="ri-arrow-down-line"></i>
+                <div class="box">Css</div>
+                <i class="ri-arrow-down-line"></i>
+                <div class="box">CSSOM Tree</div>
+                <i class="ri-arrow-down-line"></i>
+                <div class="box">DOMTREE + CSSOM Tree</div>
+                <i class="ri-arrow-down-line"></i>
+                <div class="box">Render Tree</div>
+
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - FinTrack Pro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-card">
+        <h1 id="cardHead">Welcome Back</h1>
+        <p class="subtitle">Login to FinTrack Pro</p>
+
+        <form id="login-form">
+          <div class="input-group">
+            <label id="Username">Username</label>
+            <input name="name" type="text" placeholder="" />
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <input name="password" type="password" placeholder="" />
+          </div>
+
+          <button id="form-Btn" type="submit">Login</button>
+        </form>
+
+        <p class="register">
+          Don't have an account?
+          <a href="#">Register here</a>
+        </p>
+      </div>
+      <div class="Resister-card">
+        <h1>Create Account</h1>
+        <p class="subtitle">Join FinTrack Pro</p>
+        <form id="resister-form">
+          <div class="input-group">
+            <label>Choose a Username</label>
+            <input name="name" type="text" />
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <input name="password" type="password" />
+          </div>
+
+          <button id="resister-button" type="submit">Register</button>
+        </form>
+
+        <p class="login">
+          Already have an account?
+          <a href="#">Login here</a>
+        </p>
+      </div>
+    </div>
+    <div class="account">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">
+          <h2>FinTrack Pro</h2>
+          <small>Enterprise Finance</small>
+        </div>
+
+        <nav>
+          <a href="#" class="active">Dashboard</a>
+          <a href="#" class="setting">Settings</a>
+        </nav>
+
+        <button class="add-btn">+ Add Transaction</button>
+      </aside>
+
+      <!-- Main -->
+      <main class="content">
+        <!-- Header -->
+        <header>
+          <div>
+            <h1>Financial Overview</h1>
+            <p>Real-time tracking application</p>
+          </div>
+
+          <div class="profile">
+            <span>Babita</span>
+            <button class="theme">Dark theme</button>
+            <button class="logout">Logout</button>
+          </div>
+        </header>
+
+        <!-- Cards -->
+        <section class="cards">
+          <div class="card balance">
+            <h4>Current Balance</h4>
+            <h2>$0.00</h2>
+          </div>
+
+          <div class="card income">
+            <h4>Total Income</h4>
+            <h2>$0.00</h2>
+          </div>
+
+          <div class="card expense">
+            <h4>Total Expense</h4>
+            <h2>$0.00</h2>
+          </div>
+
+          <div class="card transaction">
+            <h4>Total Transactions</h4>
+            <h2>0</h2>
+          </div>
+        </section>
+
+        <!-- Chart -->
+
+        <section class="chart-box">
+          <h2>Cash Flow Analysis</h2>
+
+          <canvas id="cashFlowChart"></canvas>
+        </section>
+
+        <!-- Transactions -->
+
+        <section class="table-box">
+          <h2>All Transactions</h2>
+
+          <div class="filters">
+            <input type="text" placeholder="Search" />
+
+            <select>
+              <option>All Types</option>
+            </select>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </section>
+      </main>
+
+      <div class="overlayForm">
+        <div class="TranForm-container">
+          <div class="header">
+            <h2>Add Transaction</h2>
+            <span class="close">&times;</span>
+          </div>
+
+          <form id="tran-Form">
+            <label>Type</label>
+            <select>
+              <option>Expense</option>
+              <option>Income</option>
+            </select>
+
+            <label>Description</label>
+            <input type="text" placeholder="e.g. Amazon, Salary, Coffee" />
+
+            <div class="row">
+              <div class="input-box">
+                <label>Amount</label>
+                <input type="number" placeholder="" />
+              </div>
+
+              <div class="input-box">
+                <label>Date</label>
+                <input type="date" />
+              </div>
+            </div>
+
+            <label>Category</label>
+            <select>
+              <option>Select a category</option>
+              <option>Food</option>
+              <option>Travel</option>
+              <option>Shopping</option>
+              <option>Salary</option>
+            </select>
+
+            <button type="submit">Save Transaction</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>

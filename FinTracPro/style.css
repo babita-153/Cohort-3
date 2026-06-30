@@ -1,0 +1,444 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  width: 530px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.login-card h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.input-group input {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #d6d6d6;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: black;
+  box-shadow: 0 0 5px rgba(21, 27, 35, 0.3);
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background: #0d5db8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 8px;
+}
+
+button:hover {
+  background: #0b4f9c;
+}
+
+.register {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 17px;
+  color: #222;
+}
+
+.register a {
+  text-decoration: none;
+  color: #0d5db8;
+  font-weight: 500;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.Resister-card {
+  width: 530px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+.Resister-card h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+.Register-card .subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 30px;
+}
+#resister-button {
+  width: 100%;
+  height: 40px;
+  background: green;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 8px;
+}
+.Resister-card {
+  display: none;
+}
+.login {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 18px;
+  color: #222;
+}
+
+.login a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+}
+.login a:hover {
+  text-decoration: underline;
+}
+
+.account{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: none;
+}
+.darkTheme{
+  background-color: #222;
+  color:white
+}
+.overlay {
+  display: flex;
+  /* flex-direction: column; */
+  position: absolute;
+}
+.sidebar {
+  width: 240px;
+  height: 100%;
+  /* background: #fff; */
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.logo {
+  margin-bottom: 40px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+nav a {
+  padding: 12px;
+  text-decoration: none;
+  color: #6b6969;
+  border-radius: 8px;
+}
+
+nav a:hover{
+  background-color: #457aefbc;
+  color:white;
+}
+nav a.active {
+  background: #dce9ff;
+  color: #2563eb;
+}
+
+.add-btn {
+  margin-top: auto;
+  padding: 15px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.theme{
+  color:white
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.card h4 {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.income h2 {
+  color: green;
+}
+
+.expense h2 {
+  color: red;
+}
+.chart-box {
+  margin-top: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.chart-placeholder {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  border: 2px dashed #ddd;
+}
+.table-box {
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.filters input,
+.filters select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+.overlayForm{
+    width:100%;
+    position: absolute;
+    height:100vh;
+    background:rgba(0, 0, 0, 0.416);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display: none;
+}
+
+.TranForm-container{
+    width:520px;
+    background:#fff;
+    border-radius:12px;
+    padding:25px 30px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.header h2{
+    font-size:34px;
+    font-weight:bold;
+}
+
+.close{
+    font-size:32px;
+    cursor:pointer;
+    color:#777;
+}
+
+
+#tran-Form label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-size:18px;
+    font-weight:500;
+}
+
+#tran-Form input,
+select{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:17px;
+    outline:none;
+}
+
+#tran-Form input:focus,
+select:focus{
+    border-color:#333;
+}
+
+#tran-Form .row{
+    display:flex;
+    gap:20px;
+}
+
+#tran-Form .input-box{
+    flex:1;
+}
+
+#tran-Form button{
+    width:100%;
+    margin-top:30px;
+    padding:15px;
+    background:#000;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#tran-Form button:hover{
+    background:#222;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .login-card {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .login-card h1 {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .input-group label {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  .register {
+    font-size: 16px;
+  }
+  .login {
+    font-size: 15px;
+  }
+}
